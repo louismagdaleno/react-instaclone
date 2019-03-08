@@ -1,16 +1,19 @@
 import React from 'react';
 
-// import components
-import Logos from '..Logos/Logos';
-import SearchBox from '../SearchBox';
-import UserIcons from '../UserIcons';
+import logo from './logo.png';
+
+
 
 const SearchBar = (props) => {
     return (
-        <header>
-            <Logos />
-            <SearchBox />
-            <UserIcons />
+        <header className="searchBar">
+            <img src={logo} className="headerImg" />
+            <span>|</span>
+            <img src={props.logoSrc} className="headerImg"/>
+            <input type="text" name="search" placeholder="Search" />
+            <img src={props.postSrc} className="headerImg"/>
+            <img src={props.heartSrc} className="headerImg"/>
+            <img src={props.profileSrc} className="headerImg"/>
         </header>
     );
 }
