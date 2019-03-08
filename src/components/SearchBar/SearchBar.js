@@ -8,18 +8,17 @@ import heart from './heart.png';
 import user from './user.png';
 import post from './post.png';
 
-
+// TODO - Refactor into subcomponents
 
 const SearchBar = (props) => {
     return (
         <header className="searchBar">
             <img src={logo} className="headerImg" />
-            <span>|</span>
             <img src={instagram} className="logo"/>
             <input type="text" name="search" placeholder="🔎 Search" />
-            <img src={post} className="headerImg"/>
-            <img src={heart} className="headerImg"/>
-            <img src={user} className="headerImg"/>
+            <a href="#"><img src={post} className="headerImg"/></a>
+            <a href="#"><img src={heart} className="headerImg"/></a>
+            <a href="#"><img src={user} className="headerImg"/></a>
         </header>
     );
 }
