@@ -4,6 +4,10 @@ import './SearchBar.css';
 import logo from './logo.png';
 import instagram from './instagram.png';
 
+import heart from './heart.png';
+import user from './user.png';
+import post from './post.png';
+
 
 
 const SearchBar = (props) => {
@@ -11,11 +15,11 @@ const SearchBar = (props) => {
         <header className="searchBar">
             <img src={logo} className="headerImg" />
             <span>|</span>
-            <img src={instagram} className="headerImg"/>
-            <input type="text" name="search" placeholder="Search" />
-            <img src={props.postSrc} className="headerImg"/>
-            <img src={props.heartSrc} className="headerImg"/>
-            <img src={props.profileSrc} className="headerImg"/>
+            <img src={instagram} className="logo"/>
+            <input type="text" name="search" placeholder="🔎 Search" />
+            <img src={post} className="headerImg"/>
+            <img src={heart} className="headerImg"/>
+            <img src={user} className="headerImg"/>
         </header>
     );
 }
