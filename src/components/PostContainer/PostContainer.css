@@ -60,7 +60,7 @@
 
 .postContainer > input {
     box-sizing: border-box;
-
+    height: 60px;
     margin-top: 10px;
     font-size: 1.6rem;
 }
