@@ -33,7 +33,7 @@
     align-items: center;
     justify-content: flex-start;
     margin-top: 10px;
-    margin-left: 15px;
+    padding-left: 15px;
 }
 
 .actions > img {
@@ -54,7 +54,7 @@
 
 .likes > p {
     font-size: 1.6rem;
-    margin-left: 15px;
+    padding-left: 15px;
     font-weight: 500;
 }
 
@@ -64,5 +64,5 @@
     height: 60px;
     margin-top: 10px;
     font-size: 1.6rem;
-    border: none;
+    border: 0 px solid black;
 }
